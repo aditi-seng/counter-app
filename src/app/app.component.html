@@ -1,0 +1,4 @@
+<div class="container py-5">
+  <app-counter (actionTaken)="handleAction($event)"></app-counter>
+  <app-history [history]="historyList" [clearHistory]="clearAllHistory"></app-history>
+</div>

@@ -1,0 +1,9 @@
+<div class="mt-4">
+    <h4>History</h4>
+    <ul class="list-group">
+      <li *ngFor="let entry of history; index as i" class="list-group-item">
+        {{ i + 1 }}. {{ entry }}
+      </li>
+    </ul>
+    <button class="btn btn-outline-danger mt-3" (click)="clearHistory()">🗑️ Clear History</button>
+  </div>
